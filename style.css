@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+h1 {
+    color: #d84a0c;
+}{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource":"arn:aws:s3:::code-pipeline-demo/*"
+        }
+    ]
+}
